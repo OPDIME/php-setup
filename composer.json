@@ -1,16 +1,21 @@
 {
-    "name": "opdime/php-setup",
-    "description": "OPDIME PHP setup.",
-    "type": "library",
-    "license": "Unlicense",
-    "authors": [
-        {
-            "name": "Jörn Neumeyer",
-            "email": "joernneumeyer@gmail.com"
-        }
-    ],
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit": "^7.2"
+  "name": "opdime/php-setup",
+  "description": "OPDIME PHP setup.",
+  "type": "library",
+  "license": "Unlicense",
+  "authors": [
+    {
+      "name": "Jörn Neumeyer",
+      "email": "joernneumeyer@gmail.com"
     }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "OPDIME\\": "src/"
+    }
+  }
 }
